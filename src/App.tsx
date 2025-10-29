@@ -964,6 +964,36 @@ function App() {
           </div>
         </div>
       )}
+      
+      {/* Footer */}
+      <footer className="app-footer">
+        <div className="footer-content">
+          <div className="footer-brand">
+            <img
+              src="https://github.com/JosephGabriels/JosephGabriels/raw/main/colored-logo.png"
+              alt="El-Technologies"
+              className="footer-logo"
+              onError={(e) => {
+                const target = e.target as HTMLImageElement;
+                target.style.display = 'none';
+              }}
+            />
+            <div className="footer-text">
+              <p className="footer-title">Luxe Expense Tracker</p>
+              <p className="footer-credit">
+                Created by <span className="credit-link">El-Technologies (josephgabriels)</span>
+              </p>
+            </div>
+          </div>
+          <div className="footer-links">
+            <a href="https://github.com/JosephGabriels" target="_blank" rel="noopener noreferrer" className="footer-link">
+              GitHub
+            </a>
+            <a href="#" className="footer-link">Privacy</a>
+            <a href="#" className="footer-link">Terms</a>
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }
