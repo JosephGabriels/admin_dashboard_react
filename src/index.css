@@ -1,0 +1,57 @@
+:root {
+  font-family: 'SF Pro Text', 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #2f1039;
+  background-color: #fcecff;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: light;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.65), transparent 55%),
+    radial-gradient(circle at 88% -8%, rgba(255, 200, 235, 0.7), transparent 45%),
+    linear-gradient(135deg, #fef2ff 0%, #ffe7f6 40%, #ffd9f0 68%, #ffe9fb 100%);
+  color: #2f1039;
+}
+
+#root {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+button {
+  font-family: inherit;
+}
+
+input {
+  font-family: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
